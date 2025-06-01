@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Gear Ltd. | Premium Solar Energy Solutions in Kenya</title>
+    <meta name="description" content="Kenya's premium solar provider offering cutting-edge solar solutions for homes and businesses in Nairobi, Kajiado County and beyond.">
+    <link rel="icon" href="https://picsum.photos/64?random=100" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFA500",
+                        secondary: "#1E3A8A",
+                        accent: "#10B981",
+                        dark: "#022b3a"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(2,43,58,0.9) 0%, rgba(30,58,138,0.8) 100%);
+        }
+        
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+        
+        .swiper-pagination-bullet {
+            background: white !important;
+            opacity: 0.5 !important;
+            width: 12px !important;
+            height: 12px !important;
+            margin: 0 8px !important;
+        }
+        
+        .swiper-pagination-bullet-active {
+            opacity: 1 !important;
+            background: #FFA500 !important;
+        }
+        
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .hero-title {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://picsum.photos/50?random=101" alt="Solar Gear Ltd. Logo" class="h-10 mr-3">
+                    <span class="text-xl logo-text text-secondary">SOLAR GEAR</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="font-medium hover:text-primary transition">Home</a>
+                    <a href="#services" class="font-medium hover:text-primary transition">Services</a>
+                    <a href="#benefits" class="font-medium hover:text-primary transition">Benefits</a>
+                    <a href="#projects" class="font-medium hover:text-primary transition">Projects</a>
+                    <a href="#contact" class="font-medium hover:text-primary transition">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu hidden md:hidden mt-4">
+                <div class="flex flex-col space-y-3 pb-4">
+                    <a href="#home" class="font-medium hover:text-primary transition py-2">Home</a>
+                    <a href="#services" class="font-medium hover:text-primary transition py-2">Services</a>
+                    <a href="#benefits" class="font-medium hover:text-primary transition py-2">Benefits</a>
+                    <a href="#projects" class="font-medium hover:text-primary transition py-2">Projects</a>
+                    <a href="#contact" class="font-medium hover:text-primary transition py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero-gradient text-white relative">
+        <div class="swiper hero-swiper h-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(2,43,58,0.7), rgba(30,58,138,0.7)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+                    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-10 md:mb-0">
+                                <h1 class="text-4xl md:text-5xl font-bold mb-6 hero-title">Power Your Future With Solar</h1>
+                                <p class="text-xl mb-8 max-w-lg">Premium solar solutions engineered for Kenyan homes and businesses. Experience energy independence today.</p>
+                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                                    <a href="#contact" class="bg-primary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition cta-button">Get Free Quote</a>
+                                    <a href="#services" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-6 rounded-lg text-center transition cta-button">Our Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(2,43,58,0.7), rgba(30,58,138,0.7)), url('https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80')">
+                    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-10 md:mb-0">
+                                <h1 class="text-4xl md:text-5xl font-bold mb-6 hero-title">Cut Your Energy Bills by 90%</h1>
+                                <p class="text-xl mb-8 max-w-lg">Our high-efficiency solar systems deliver maximum savings with premium components.</p>
+                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                                    <a href="#contact" class="bg-primary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition cta-button">Calculate Savings</a>
+                                    <a href="#projects" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-6 rounded-lg text-center transition cta-button">See Projects</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(2,43,58,0.7), rgba(30,58,138,0.7)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+                    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-10 md:mb-0">
+                                <h1 class="text-4xl md:text-5xl font-bold mb-6 hero-title">24/7 Reliable Power</h1>
+                                <p class="text-xl mb-8 max-w-lg">Battery backup solutions that keep your lights on during blackouts.</p>
+                                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                                    <a href="#contact" class="bg-primary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg text-center transition cta-button">Get Protected</a>
+                                    <a href="#benefits" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-6 rounded-lg text-center transition cta-button">Learn Benefits</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">Premium Solar Solutions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Engineered for Kenyan conditions using top-tier components</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-primary text-5xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Residential Solar</h3>
+                    <p class="text-gray-600 mb-4">Complete home solar systems with premium panels and intelligent energy management.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>3.5kW to 10kW systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Lithium battery options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Smart monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-primary text-5xl mb-4">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Commercial Solar</h3>
+                    <p class="text-gray-600 mb-4">Custom solar solutions designed for Kenyan businesses to maximize ROI.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>10kW to 500kW systems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Hybrid grid-tie options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Enterprise monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-primary text-5xl mb-4">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Off-Grid Systems</h3>
+                    <p class="text-gray-600 mb-4">Reliable power solutions for rural areas and locations without grid access.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Complete off-grid packages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Solar water pumping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                            <span>Community-scale solutions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">The Solar Gear Advantage</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Why Kenyan homeowners and businesses choose our premium solutions</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-primary transition">
+                    <div class="text-accent text-4xl mb-3">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Premium Components</h3>
+                    <p class="text-gray-600">We use only Tier 1 solar panels and certified equipment for maximum reliability.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-primary transition">
+                    <div class="text-accent text-4xl mb-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">10-Year Warranty</h3>
+                    <p class="text-gray-600">Industry-leading warranty coverage on all our installations.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-primary transition">
+                    <div class="text-accent text-4xl mb-3">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Expert Installers</h3>
+                    <p class="text-gray-600">Our NITA-certified technicians ensure perfect installation every time.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-primary transition">
+                    <div class="text-accent text-4xl mb-3">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Dedicated customer care team ready to assist you anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects/Testimonials -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">Our Solar Projects</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Premium installations across Kenya</p>
+            </div>
+            
+            <div class="swiper project-swiper mb-12">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-xl overflow-hidden shadow-lg">
+                            <div class="relative h-64">
+                                <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Karen Residence" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <h3 class="font-bold text-xl text-white mb-1">Karen Residence</h3>
+                                    <p class="text-gray-200">8kW Hybrid System</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white">
+                                <p class="text-gray-600 mb-4">Premium installation featuring Canadian Solar panels and Tesla Powerwall battery backup.</p>
+                                <div class="flex justify-between text-sm text-gray-500">
+                                    <span><i class="fas fa-calendar-alt mr-1"></i> Completed: Jan 2023</span>
+                                    <span><i class="fas fa-bolt mr-1"></i> 8kW Capacity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-xl overflow-hidden shadow-lg">
+                            <div class="relative h-64">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Kajiado Business Park" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <h3 class="font-bold text-xl text-white mb-1">Kajiado Business Park</h3>
+                                    <p class="text-gray-200">45kW Commercial System</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white">
+                                <p class="text-gray-600 mb-4">Grid-tied commercial system with 120x 375W panels and SMA inverters.</p>
+                                <div class="flex justify-between text-sm text-gray-500">
+                                    <span><i class="fas fa-calendar-alt mr-1"></i> Completed: Mar 2023</span>
+                                    <span><i class="fas fa-bolt mr-1"></i> 45kW Capacity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-xl overflow-hidden shadow-lg">
+                            <div class="relative h-64">
+                                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Rural School Project" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6">
+                                    <h3 class="font-bold text-xl text-white mb-1">Rural School Project</h3>
+                                    <p class="text-gray-200">15kW Off-Grid System</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white">
+                                <p class="text-gray-600 mb-4">Complete off-grid solution powering classrooms and dormitories 24/7.</p>
+                                <div class="flex justify-between text-sm text-gray-500">
+                                    <span><i class="fas fa-calendar-alt mr-1"></i> Completed: Nov 2022</span>
+                                    <span><i class="fas fa-bolt mr-1"></i> 15kW Capacity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-xl shadow-md max-w-4xl mx-auto">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-secondary mb-2">Client Testimonials</h3>
+                    <p class="text-gray-600">Hear what our satisfied customers say about our premium solar solutions</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="border-l-4 border-primary pl-4">
+                        <div class="flex items-center mb-3">
+                            <div class="flex-shrink-0 mr-3">
+                                <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="James M.">
+                            </div>
+                            <div>
+                                <p class="font-bold">James M.</p>
+                                <p class="text-sm text-gray-500">Karen, Nairobi</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-3">"Solar Gear transformed our home energy system. The premium components and professional installation have given us zero problems for 18 months now. Our electricity bill dropped from KSh 15,000 to just KSh 1,200!"</p>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="border-l-4 border-primary pl-4">
+                        <div class="flex items-center mb-3">
+                            <div class="flex-shrink-0 mr-3">
+                                <img class="h-10 w-10 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah K.">
+                            </div>
+                            <div>
+                                <p class="font-bold">Sarah K.</p>
+                                <p class="text-sm text-gray-500">Kajiado</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-3">"As a business owner, I needed reliable power. Solar Gear designed a commercial system that cut our energy costs by 75% while giving us uninterrupted operations. Their after-sales support is exceptional."</p>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready for Energy Independence?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Get started with a free, no-obligation consultation with our solar experts.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-secondary font-bold py-3 px-8 rounded-lg inline-block transition cta-button">Get Your Free Quote</a>
+                <a href="tel:+254722963896" class="bg-secondary hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg inline-block transition cta-button">
+                    <i class="fas fa-phone-alt mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact Solar Gear</h2>
+                <p class="text-lg max-w-2xl mx-auto">Our solar consultants are ready to design your perfect energy solution.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <form id="contact-form" class="bg-white rounded-xl shadow-xl p-8 text-gray-800">
+                        <h3 class="text-xl font-bold mb-6 text-secondary">Request a Free Quote</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name*</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address*</label>
+                                <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number*</label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="location" class="block text-gray-700 font-medium mb-2">Location*</label>
+                                <select id="location" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option value="">Select your area</option>
+                                    <option value="nairobi">Nairobi</option>
+                                    <option value="kajiado">Kajiado County</option>
+                                    <option value="other">Other Region</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed*</label>
+                            <select id="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <option value="">Select service</option>
+                                <option value="residential">Residential Solar</option>
+                                <option value="commercial">Commercial Solar</option>
+                                <option value="offgrid">Off-Grid System</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Solar Needs</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition cta-button">
+                            Request Free Quote <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-white bg-opacity-10 p-8 rounded-xl h-full">
+                        <h3 class="text-xl font-bold mb-6">Our Contacts</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-primary text-xl mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p>info@solargear.co.ke</p>
+                                    <p class="text-sm text-gray-300 mt-1">Typically responds within 1 business day</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-primary text-xl mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p>0722 963 896</p>
+                                    <p class="text-sm text-gray-300 mt-1">Mon-Fri: 8:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-primary text-xl mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Service Areas</h4>
+                                    <p>Nairobi, Kajiado County, and surrounding regions</p>
+                                    <p class="text-sm text-gray-300 mt-1">Free site assessments for qualified projects</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <img src="https://picsum.photos/50?random=101" alt="Solar Gear Logo" class="h-8 mr-3">
+                        <span class="logo-text">SOLAR GEAR</span>
+                    </h3>
+                    <p class="text-gray-400 mb-4">Premium solar energy solutions for Kenyan homes and businesses.</p>
+                    <p class="text-gray-400 text-sm">Nairobi, Kenya</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Residential Solar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Commercial Solar</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Off-Grid Systems</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Solar Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Energy Audits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Our Team</a></li>
+                        <li><a href="#" class="text-gray-
