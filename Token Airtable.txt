@@ -1,8 +1,0 @@
-pathZLnHZyUxEHTnd.d20c6e683a4a79197c6555f4b5e96dac3c12b816ea700f46909418970e080e51
-
-
-The ID of this base is appntZlQXXfSbYyCN.
-
-make webhook: https://hook.eu2.make.com/h1vcldtruqqkpbi2wx1tqdbku5owx5q3
-
-airtable token: patIfkbSsVoPvYKsO.4500e378b17f83140a31178a091afb1d569fe9aae511ce1729120a1a428bda57
